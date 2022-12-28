@@ -1,0 +1,23 @@
+[user]
+	name = Saurav Maheshkar
+	email = sauravvmaheshkar@gmail.com
+[core]
+    excludesfile = ~/.gitignore
+[push]
+	default = upstream
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[color]
+	ui = true
+[commit]
+	verbose = true
+[rebase]
+	autoStash = true
+[checkout]
+	defaultRemote = origin
+[branch]
+	sort = -committerdate
+[github]
+	user = SauravMaheshkar

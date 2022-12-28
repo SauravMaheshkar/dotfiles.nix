@@ -21,3 +21,11 @@
 	sort = -committerdate
 [github]
 	user = SauravMaheshkar
+[alias]
+	s = status
+	del = branch -D
+	cob = checkout -b
+	last = log -1 HEAD
+	logs = log --show-signature
+	branches = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+

@@ -23,4 +23,5 @@ jobs:
       - run: |
           mkdir -p ~/dotfiles-install-dir
       - run: |
+          chmod +x ./install.sh
           HOME=~/dotfiles-install-dir ./install.sh

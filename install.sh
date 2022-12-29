@@ -14,11 +14,7 @@ brew_packages_optional="docker gh git-lfs hdf5 icarus-verilog numpy openblas qem
 ###############################################################################
 
 function apt_install_packages {
-    sudo apt-get update && sudo apt-get install -y --no-install-recommends ${apt_packages} ${apt_packages_optional} && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/* && apt_install_docker
-}
-
-function apt_install_docker {
-    /bin/bash -c "$(curl -fsSL https://get.docker.com -o get-docker.sh)" && sudo sh get-docker.sh
+    sudo apt-get update && sudo apt-get install -y --no-install-recommends ${apt_packages} ${apt_packages_optional} && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
 }
 
 function brew_install_self {

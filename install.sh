@@ -48,6 +48,6 @@ stow zsh
 # Change default shell to zsh
 ###############################################################################
 
-[ "${os_type}" != "Darwin" ] && chsh -s "$(command -v zsh)"
+[ "${os_type}" != "Darwin" ] && sudo chsh -s "$(command -v zsh)"
 
 exit 0

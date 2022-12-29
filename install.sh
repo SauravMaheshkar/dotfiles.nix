@@ -18,7 +18,7 @@ function apt_install_packages {
 }
 
 function apt_install_docker {
-    /bin/bash -c "$(curl -fsSL https://get.docker.com -o get-docker.sh)" && sh get-docker.sh
+    /bin/bash -c "$(curl -fsSL https://get.docker.com -o get-docker.sh)" && sudo sh get-docker.sh
 }
 
 function brew_install_self {

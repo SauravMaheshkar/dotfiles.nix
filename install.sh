@@ -3,7 +3,7 @@ set -e
 
 os_type=$(uname -s)
 
-apt_packages="build-essential curl gcc gh git gfortran libopenblas-dev neofetch python3.8 python3.8-dev python3.8-pip python3.8-venv stow tmux unzip zsh"
+apt_packages="build-essential curl gcc gh git gfortran libopenblas-dev neofetch python3 python3-dev python3-pip python3-venv stow tmux unzip zsh"
 apt_packages_optional=""
 
 brew_packages="cmake gcc git gnutls llvm mysql-client neofetch pybind11 python@3.8 stow tmux tree wget vim"

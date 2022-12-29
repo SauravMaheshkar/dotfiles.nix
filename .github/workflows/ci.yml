@@ -1,0 +1,26 @@
+name: "CI (Test Install Script)"
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  release:
+    types: [created]
+  schedule:
+    - cron: "0 0 * * 0"
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir -p ~/dotfiles-install-dir
+      - run: |
+          HOME=~/dotfiles-install-dir ./install.sh

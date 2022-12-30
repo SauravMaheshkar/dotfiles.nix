@@ -7,7 +7,7 @@ apt_packages="build-essential curl gcc gh git gfortran libopenblas-dev neofetch 
 apt_packages_optional=""
 
 brew_packages="cmake gcc git gnutls llvm mysql-client neofetch pybind11 python@3.8 stow tmux tree wget vim"
-brew_packages_optional="docker gh git-lfs hdf5 icarus-verilog numpy openblas qemu readline ruby ruby-build scipy six sqlite"
+brew_packages_optional="docker gh git-lfs hdf5 icarus-verilog numpy openblas qemu readline scipy six sqlite"
 
 ###############################################################################
 # Install packages using your OS' package manager

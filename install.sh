@@ -42,6 +42,7 @@ stow docker
 stow gh
 stow git
 stow neofetch
+stow update_scripts
 stow zsh
 
 ###############################################################################

@@ -8,3 +8,6 @@ xcode-select --install
 # List outdated packages
 pip list --outdated
 
+# Update gh extensions
+gh extension upgrade --all
+

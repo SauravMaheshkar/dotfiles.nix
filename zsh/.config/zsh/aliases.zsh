@@ -10,8 +10,8 @@ alias mv='mv -i'
 alias rm='rm -i'
 
 # python configuration
-alias python='python3.8'
-alias pip='pip3.8'
+alias python='python3.10'
+alias pip='pip3.10'
 
 # colorize ls output
 case "$(uname -s)" in

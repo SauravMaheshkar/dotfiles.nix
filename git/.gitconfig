@@ -1,21 +1,24 @@
 [user]
 	name = Saurav Maheshkar
 	email = sauravvmaheshkar@gmail.com
-	signingkey = /Users/saurav/.ssh/id_ed25519.pub
 [core]
     	excludesfile = ~/.gitignore
+	fsmonitor = true
+	untrackedcache = true
+	commitgraph = true
 [push]
 	default = upstream
 	autoSetupRemote = true
 [pull]
 	rebase = true
+[fetch]
+	writeCommitGraph = true
 [init]
 	defaultBranch = main
 [color]
 	ui = true
 [commit]
 	verbose = true
-	gpgsign = true
 [rebase]
 	autoStash = true
 [checkout]

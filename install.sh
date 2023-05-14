@@ -44,6 +44,7 @@ stow git
 stow neofetch
 stow update_scripts
 stow zsh
+stow brew
 
 ###############################################################################
 # Change default shell to zsh

@@ -39,7 +39,7 @@ stow docker
 stow gh
 stow git
 stow neofetch
-stow update_scripts
+stow scripts
 stow zsh
 stow brew
 

@@ -1,4 +1,10 @@
 #!/bin/bash
+# Ask for sudo
+sudo -v
+
+# Updates from MacOS
+softwareupdate -i -a
+
 # Remove Homebrew process locks
 rm -rf $(brew --prefix)/var/homebrew/locks
 

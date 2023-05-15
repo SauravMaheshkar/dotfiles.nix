@@ -16,7 +16,5 @@ brew "python@3.10"
 brew "stow"
 # Python cleanup script for macOS
 brew "mac-cleanup/mac-cleanup-py/mac-cleanup-py"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"

@@ -6,6 +6,9 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `macos.sh` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# Set highlight color to Manchester City Blue
+defaults write NSGlobalDomain AppleHighlightColor -string "0.4235294118 0.6705882353 0.8666666667"
+
 # Use AirDrop over every interface. srsly this should be a default.
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 

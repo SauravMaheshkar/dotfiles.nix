@@ -1,5 +1,8 @@
 name: "CI (Test Install and Customization Script)"
 
+env:
+  GH_TOKEN: ${{ github.token }}
+
 on:
   push:
     branches: [main]
@@ -11,29 +14,32 @@ on:
     - cron: "0 0 * * 0"
 
 jobs:
-  build:
-    name: "Test Install Script"
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest]
+  build-ubuntu:
+    name: "Test Script on Ubuntu"
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
-      - run: |
+      - name: Run Install Script on Ubuntu
+        run: |
           mkdir -p ~/dotfiles-install-dir
           chmod +x ./install.sh
           HOME=~/dotfiles-install-dir ./install.sh
-  macos-customization:
-    name: "Test macOS Customization Scripts"
-    needs: build
+
+  build-macos:
+    name: "Test Scripts on macOS"
     runs-on: macos-latest
+
     steps:
       - uses: actions/checkout@v2
-      - run: |
+      - name: Run Install Script on macOS
+        run: |
           mkdir -p ~/dotfiles-install-dir
+          chmod +x ./install.sh
+          HOME=~/dotfiles-install-dir ./install.sh
+      - name: Run Customization Scripts
+        run: |
           chmod +x scripts/macos.sh
           chmod +x scripts/update_macos.sh
-          HOME=~/dotfiles-install-dir scripts/macos.sh
-          HOME=~/dotfiles-install-dir scripts/update_macos.sh
+          ./scripts/macos.sh
+          HOME=~/dotfiles-install-dir ./scripts/update_macos.sh

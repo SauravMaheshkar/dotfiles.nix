@@ -2,6 +2,8 @@ tap "homebrew/bundle"
 tap "homebrew/cask-versions"
 tap "homebrew/services"
 tap "mac-cleanup/mac-cleanup-py"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system

@@ -1,4 +1,4 @@
-name: "CI (Test Install Script)"
+name: "CI (Test Install and Customization Script)"
 
 on:
   push:
@@ -12,6 +12,7 @@ on:
 
 jobs:
   build:
+    name: "Test Install Script"
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -22,6 +23,17 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           mkdir -p ~/dotfiles-install-dir
-      - run: |
           chmod +x ./install.sh
           HOME=~/dotfiles-install-dir ./install.sh
+  macos-customization:
+    name: "Test macOS Customization Scripts"
+    needs: build
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir -p ~/dotfiles-install-dir
+          chmod +x scripts/macos.sh
+          chmod +x scripts/update_macos.sh
+          HOME=~/dotfiles-install-dir scripts/macos.sh
+          HOME=~/dotfiles-install-dir scripts/update_macos.sh

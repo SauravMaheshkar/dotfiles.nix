@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@main
       - name: Run Install Script on Ubuntu
         run: |
           mkdir -p ~/dotfiles-install-dir
@@ -31,7 +31,7 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@main
       - name: Run Install Script on macOS
         run: |
           mkdir -p ~/dotfiles-install-dir

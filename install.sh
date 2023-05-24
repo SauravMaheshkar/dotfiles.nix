@@ -49,4 +49,10 @@ stow brew
 
 [ "${os_type}" != "Darwin" ] && sudo chsh -s "$(command -v zsh)"
 
+###############################################################################
+# Install some Github CLI Extensions
+###############################################################################
+
+while IFS= read -r line; do gh extension install $line; done < gh/.config/gh/extensions.txt
+
 exit 0

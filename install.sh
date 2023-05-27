@@ -35,7 +35,6 @@ fi
 # Stow dotfiles
 ###############################################################################
 
-stow docker
 stow gh
 stow git
 stow neofetch

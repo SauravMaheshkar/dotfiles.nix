@@ -42,4 +42,3 @@ jobs:
           chmod +x scripts/macos.sh
           chmod +x scripts/update_macos.sh
           ./scripts/macos.sh
-          HOME=~/dotfiles-install-dir ./scripts/update_macos.sh

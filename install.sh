@@ -35,12 +35,13 @@ fi
 # Stow dotfiles
 ###############################################################################
 
+stow brew
 stow gh
 stow git
 stow neofetch
 stow scripts
+stow yabai
 stow zsh
-stow brew
 
 ###############################################################################
 # Change default shell to zsh

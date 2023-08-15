@@ -18,7 +18,7 @@
 [color]
 	ui = true
 [commit]
-	sign = true
+	signoff = true
 	verbose = true
 [rebase]
 	autoStash = true

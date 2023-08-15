@@ -20,3 +20,6 @@ gh extension upgrade --all
 # Flutter
 flutter doctor
 
+# MacOS - Cleanup
+mac-cleanup
+

@@ -18,6 +18,7 @@
 [color]
 	ui = true
 [commit]
+	sign = true
 	verbose = true
 [rebase]
 	autoStash = true
@@ -34,9 +35,6 @@
 	last = log -1 HEAD
 	logs = log --show-signature
 	branches = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
-
-[gpg]
-	format = ssh
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f

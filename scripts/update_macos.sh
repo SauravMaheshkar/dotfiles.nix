@@ -17,9 +17,6 @@ pip list --outdated
 # Update gh extensions
 gh extension upgrade --all
 
-# Flutter
-flutter doctor
-
 # MacOS - Cleanup
 mac-cleanup
 

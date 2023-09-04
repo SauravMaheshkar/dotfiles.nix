@@ -19,5 +19,4 @@ brew "stow"
 brew "koekeishiya/formulae/yabai"
 # Python cleanup script for macOS
 brew "mac-cleanup/mac-cleanup-py/mac-cleanup-py"
-# UI toolkit for building applications for mobile, web and desktop
-cask "flutter"
+

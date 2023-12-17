@@ -40,7 +40,6 @@ stow gh
 stow git
 stow neofetch
 stow scripts
-stow yabai
 stow zsh
 
 ###############################################################################

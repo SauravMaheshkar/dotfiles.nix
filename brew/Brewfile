@@ -15,8 +15,6 @@ brew "neofetch"
 brew "python@3.10"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
-# A tiling window manager for macOS based on binary space partitioning.
-brew "koekeishiya/formulae/yabai"
 # Python cleanup script for macOS
 brew "mac-cleanup/mac-cleanup-py/mac-cleanup-py"
 

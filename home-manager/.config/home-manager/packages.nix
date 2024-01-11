@@ -14,6 +14,7 @@ let
 
   misc = with pkgs; [
     stow
+    raycast
     neofetch
     rectangle
   ];

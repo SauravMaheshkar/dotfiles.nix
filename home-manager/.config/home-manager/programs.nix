@@ -18,5 +18,7 @@
         enable = true;
     };
 
+    vscode = import ./vscode.nix { inherit pkgs; };
+
     zsh = import ./zsh.nix { inherit pkgs; };
 }

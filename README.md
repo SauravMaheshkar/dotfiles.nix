@@ -1,4 +1,7 @@
-~/dotfiles
+## `~/dotfiles`
+
+[![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
+
 
 1. Install [Nix](https://determinate.systems/posts/determinate-nix-installer)
 2. Install [nix-darwin](https://github.com/LnL7/nix-darwin)

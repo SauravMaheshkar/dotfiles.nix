@@ -12,6 +12,11 @@ let
     git
   ];
 
+  jsTools = with pkgs; [
+    nodejs
+    nodePackages.pnpm
+  ];
+
   misc = with pkgs; [
     stow
     raycast
@@ -34,6 +39,7 @@ let
 in
 basic
 ++ gitTools
+++ jsTools
 ++ misc
 ++ pythonTools
 ++ rustTools

@@ -4,6 +4,7 @@ let
   basic = with pkgs; [
     coreutils
     findutils
+    jetbrains-mono
     unzip
     wget
   ];

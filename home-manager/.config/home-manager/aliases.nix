@@ -9,7 +9,7 @@
 
     shell = {
         conf = "code ~/dotfiles/";
-        xgc = "nix store --gc && nix store --optimise";
+        xgc = "nix-store --gc && nix-store --optimise";
         ls = "ls --color=auto";
     };
 }

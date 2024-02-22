@@ -23,6 +23,22 @@
 
   services.nix-daemon.enable = true;
 
+  services.yabai = {
+    enable = true;
+    config = {
+      layout = "bsp";
+      focus_follows_mouse = "autoraise";
+      mouse_follows_focus = "on";
+      window_placement = "second_child";
+      top_padding = 15;
+      bottom_padding = 15;
+      left_padding = 15;
+      right_padding = 15;
+      window_gap = 15;
+    };
+  };
+  services.skhd.enable = true;
+
   users.users.${username} = {
     home = "/Users/${username}";
     shell = pkgs.zsh;

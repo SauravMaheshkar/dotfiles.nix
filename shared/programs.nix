@@ -19,9 +19,7 @@
 
   gpg.enable = true;
 
-  home-manager = {
-    enable = true;
-  };
+  home-manager = { enable = true; };
 
   jq.enable = true;
 

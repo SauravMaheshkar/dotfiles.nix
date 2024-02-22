@@ -1,52 +1,19 @@
 { pkgs }:
 
 let
-  basic = with pkgs; [
-    fd
-    git
-    tree
-    wget
-    unzip
-    ripgrep
-    coreutils
-    findutils
-  ];
+  basic = with pkgs; [ jq fd git tree wget unzip ripgrep coreutils findutils ];
 
-  buildTools = with pkgs; [
-    cmake
-    rustc
-  ];
+  buildTools = with pkgs; [ cmake rustc ];
 
-  jsTools = (with pkgs; [
-    nodejs
-  ] ++ (with nodePackages; [
-    pnpm
-  ]));
+  jsTools = (with pkgs; [ nodejs ] ++ (with nodePackages; [ pnpm ]));
 
-  misc = with pkgs; [
-    neofetch
-    rectangle
-  ];
+  misc = with pkgs; [ neofetch ];
 
-  nixTools = with pkgs; [
-    nixfmt
-  ];
+  nixTools = with pkgs; [ nixfmt ];
 
-  pythonTools = with pkgs; [
-    python310
-    python310Packages.pip
-  ];
+  pythonTools = with pkgs; [ python310 python310Packages.pip ];
 
-  rustTools = with pkgs; [
-    cargo
-    clippy
-  ];
-in
-basic
-++ buildTools
-++ jsTools
-++ misc
-++ nixTools
-++ pythonTools
+  rustTools = with pkgs; [ cargo clippy ];
+in basic ++ buildTools ++ jsTools ++ misc ++ nixTools ++ pythonTools
 ++ rustTools
 

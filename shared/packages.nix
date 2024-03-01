@@ -7,7 +7,7 @@ let
 
   jsTools = (with pkgs; [ nodejs ] ++ (with nodePackages; [ pnpm ]));
 
-  misc = with pkgs; [ neofetch ];
+  misc = with pkgs; [ neofetch stow ];
 
   nixTools = with pkgs; [ nixfmt ];
 

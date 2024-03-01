@@ -30,14 +30,23 @@
       focus_follows_mouse = "autoraise";
       mouse_follows_focus = "on";
       window_placement = "second_child";
-      top_padding = 15;
-      bottom_padding = 15;
-      left_padding = 15;
-      right_padding = 15;
-      window_gap = 15;
+      top_padding = 10;
+      bottom_padding = 10;
+      left_padding = 10;
+      right_padding = 10;
+      window_gap = 10;
     };
+
+    extraConfig = ''
+      yabai -m config external_bar all:32:0
+    '';
   };
   services.skhd.enable = true;
+
+  services.sketchybar = {
+    enable = true;
+    extraPackages = [ pkgs.jq ];
+  };
 
   users.users.${username} = {
     home = "/Users/${username}";

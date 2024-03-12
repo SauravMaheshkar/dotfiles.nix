@@ -19,6 +19,6 @@
     protocol.keybase.allow = "always";
     credential.helper = "osxkeychain";
     init.defaultBranch = "main";
-    user = { signingkey = "1862DF73556A6819"; };
+    user = { signingkey = "6582BD988D3E6BAD"; };
   };
 }

@@ -3,11 +3,11 @@
 let
   basic = with pkgs; [ jq fd git tree wget unzip ripgrep coreutils findutils ];
 
-  buildTools = with pkgs; [ cmake rustc ];
+  buildTools = with pkgs; [ cmake just rustc ];
 
   jsTools = (with pkgs; [ nodejs ] ++ (with nodePackages; [ pnpm ]));
 
-  misc = with pkgs; [ neofetch stow ];
+  misc = with pkgs; [ neofetch stow glow ];
 
   nixTools = with pkgs; [ nixfmt ];
 

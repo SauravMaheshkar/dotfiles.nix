@@ -19,6 +19,7 @@
     protocol.keybase.allow = "always";
     credential.helper = "osxkeychain";
     init.defaultBranch = "main";
+    push.autoSetupRemote = true;
     user = { signingkey = "6582BD988D3E6BAD"; };
   };
 }

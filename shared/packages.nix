@@ -14,6 +14,6 @@ let
   pythonTools = with pkgs; [ python310 python310Packages.pip ];
 
   rustTools = with pkgs; [ cargo clippy ];
-in basic ++ buildTools ++ jsTools ++ misc ++ nixTools ++ pythonTools
+in
+basic ++ buildTools ++ jsTools ++ misc ++ nixTools ++ pythonTools
 ++ rustTools
-

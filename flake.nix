@@ -13,7 +13,8 @@
     let
       username = "saurav";
       darwin-system = import ./system/darwin.nix { inherit inputs username; };
-    in {
+    in
+    {
       darwinConfigurations = { aarch64 = darwin-system "aarch64-darwin"; };
     };
 }

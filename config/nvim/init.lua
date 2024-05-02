@@ -1,2 +1,9 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
-require('config')
+vim.cmd([[
+  augroup filetypes
+    autocmd!
+    autocmd BufNewFile,BufRead *.pl set filetype=prolog
+  augroup END
+]])
+
+require("config")

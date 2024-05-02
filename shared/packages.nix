@@ -3,7 +3,7 @@
 let
   basic = with pkgs; [ jq fd git tree wget unzip ripgrep coreutils findutils ];
 
-  buildTools = with pkgs; [ cmake just pre-commit rustc ];
+  buildTools = with pkgs; [ cmake just pkg-config pre-commit rustc ];
 
   jsTools = (with pkgs; [ nodejs ] ++ (with nodePackages; [ pnpm ]));
 

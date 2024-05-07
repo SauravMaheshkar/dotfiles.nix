@@ -7,7 +7,38 @@
 
   lfs = { enable = true; };
 
-  ignores = [ ];
+  ignores = [
+    # darwin
+    "**/.DS_Store"
+    # C/C++
+    "*.o"
+    "*.out"
+    "build/"
+    "compile_flags.txt"
+    # Nix
+    "**/result"
+    # Python
+    "**/__pycache__/"
+    "**/*.ipynb_checkpoints"
+    "**/*.egg-info"
+    "*.pyc"
+    "dist/"
+    ".pytest_cache/"
+    ".mypy_cache/"
+    ".ruff_cache/"
+    "venv"
+    ".venv"
+    "artifacts"
+    "wandb"
+    # Ruby
+    "_site"
+    ".sass_cache"
+    ".jekyll-metadata"
+    "Gemfile.lock"
+    # Rust
+    "doc/"
+    "target/"
+  ];
 
   aliases = {
     "s" = "status";

@@ -29,5 +29,10 @@
 
   tmux.enable = true;
 
+  zoxide = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
   zsh = import ./config/zsh.nix { inherit pkgs; };
 }

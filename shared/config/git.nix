@@ -51,6 +51,6 @@
     credential.helper = "osxkeychain";
     init.defaultBranch = "main";
     push.autoSetupRemote = true;
-    user = { signingkey = "6F373FDC28F90AB6"; };
+    user = { signingkey = "A73996D77318A663"; };
   };
 }

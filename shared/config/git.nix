@@ -38,6 +38,8 @@
     # Rust
     "doc/"
     "target/"
+    # misc
+    "**/.idea/"
   ];
 
   aliases = {

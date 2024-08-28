@@ -40,6 +40,7 @@
     "target/"
     # misc
     "**/.idea/"
+    ".env"
   ];
 
   aliases = {
@@ -53,6 +54,6 @@
     credential.helper = "osxkeychain";
     init.defaultBranch = "main";
     push.autoSetupRemote = true;
-    user = { signingkey = "19033171D58C7290"; };
+    user = { signingkey = "9947E4A9BBB93993"; };
   };
 }

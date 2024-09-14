@@ -11,9 +11,6 @@ let
 
   nixTools = with pkgs; [ nixfmt ];
 
-  pythonTools = with pkgs; [ python310 python310Packages.pip ];
-
   rustTools = with pkgs; [ cargo clippy ];
 in
-basic ++ buildTools ++ jsTools ++ misc ++ nixTools ++ pythonTools
-++ rustTools
+basic ++ buildTools ++ jsTools ++ misc ++ nixTools ++ rustTools
